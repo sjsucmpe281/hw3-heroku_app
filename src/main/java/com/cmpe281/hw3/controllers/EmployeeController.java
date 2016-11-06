@@ -68,6 +68,8 @@ public class EmployeeController {
             }
     )
     public ResponseEntity<?> createEmployee(@RequestBody Employee employee)    {
+        System.out.println("JDBC Database URL: " + System.getenv ("JDBC_DATABASE_URL"));
+        System.out.println("Database URL: " + System.getenv ("DATABASE_URL"));
         System.out.println(employee.getId ());
         System.out.println(employee.getFirstName ());
         System.out.println(employee.getLastName ());
