@@ -8,6 +8,7 @@ import java.io.*;
  * Harish Kumar K V
  */
 @Entity
+@Table(name = "project")
 @XmlRootElement(name = "project")
 public class Project implements Serializable {
 
